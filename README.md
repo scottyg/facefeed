@@ -10,7 +10,7 @@ Parameters
 - callback function
 
 ```html
-fb:login-button scope="public_profile,email" onlogin="feed.checkLoginState()" data-auto-logout-link="true"></fb:login-button>
+<fb:login-button scope="public_profile,email" onlogin="feed.checkLoginState()" data-auto-logout-link="true"></fb:login-button>
 	
 <script src="facefeed.js"></script>
 <script>
