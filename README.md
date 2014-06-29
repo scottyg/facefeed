@@ -9,15 +9,15 @@ Parameters
 - page_id
 - callback function
 
-```
-	<fb:login-button scope="public_profile,email" onlogin="feed.checkLoginState()" data-auto-logout-link="true"></fb:login-button>
+```html
+fb:login-button scope="public_profile,email" onlogin="feed.checkLoginState()" data-auto-logout-link="true"></fb:login-button>
 	
-	<script src="facefeed.js"></script>
-	<script>
-		var feed = new facefeed( {app_id}, {page_id}, function(response){
-			alert(response);
-		});// app_id, page_id, callback()
-	</script>
+<script src="facefeed.js"></script>
+<script>
+	var feed = new facefeed( {app_id}, {page_id}, function(response){
+		alert(response);
+	});// app_id, page_id, callback()
+</script>
 ```
 
 App ID
@@ -35,8 +35,8 @@ Callback Function
 
 Returns JSON object `response`.
 
-```
-	function(response){
-		//Do something with response
-	});
+```javascript
+function(response){
+	//Do something with response
+});
 ```
