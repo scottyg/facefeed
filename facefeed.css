@@ -1,0 +1,22 @@
+.facefeed {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.facefeed li {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.facefeed li p {
+  font-size: 1em;
+}
+.facefeed li p.author {
+  display: inline-block;
+}
+.facefeed li p.date {
+  display: inline-block;
+  margin-left: 10px;
+}
+.facefeed li p.content {
+  display: block;
+}
