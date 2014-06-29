@@ -21,14 +21,18 @@
           <h1>Facefeed</h1>
           <h2>Returns Facebook page feed as JSON object.</h2>
         </header>
-        <hr>
+
         <section id="downloads" class="clearfix">
-          <a href="https://github.com/scottyg/facefeed/releases/download/v0.1.0/facefeed.js"><span>Download facefeed.js</span></a>
+          <a href="https://github.com/scottyg/facefeed/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/scottyg/facefeed/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/scottyg/facefeed" id="view-on-github" class="button"><span>View on GitHub</span></a>
         </section>
 
+        <hr>
 
         <section id="main_content">
-   
+          <p><a href="https://github.com/scottyg/facefeed/releases/download/v0.1.0/facefeed.js">Download facefeed.js</a></p>
+
 <h2>
 <a name="parameters" class="anchor" href="#parameters"><span class="octicon octicon-link"></span></a>Parameters</h2>
 
@@ -36,7 +40,7 @@
 <li>app_id</li>
 <li>page_id</li>
 <li>callback function</li>
-</ul><div class="highlight highlight-html"><pre>&lt;fb:login-button scope="public_profile,email" onlogin="feed.checkLoginState()" data-auto-logout-link="true"&gt;<span class="nt">&lt;/fb:login-button&gt;</span>
+</ul><div class="highlight highlight-html"><pre><span class="nt">&lt;fb:login-button</span> <span class="na">scope=</span><span class="s">"public_profile,email"</span> <span class="na">onlogin=</span><span class="s">"feed.checkLoginState()"</span> <span class="na">data-auto-logout-link=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/fb:login-button&gt;</span>
 
 <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"facefeed.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
 <span class="nt">&lt;script&gt;</span>
@@ -54,7 +58,7 @@
 <h2>
 <a name="page-id" class="anchor" href="#page-id"><span class="octicon octicon-link"></span></a>Page ID</h2>
 
-<p>You can get get the id of your page by going to <a href="https://graph.facebook.com/%7Bpage-slug%7D">https://graph.facebook.com/{page-slug}</a>. The json object there will contain the id.</p>
+<p>You can get get the id of your page by going to <a href="https://graph.facebook.com/%7Bpage-slug%7D">https://graph.facebook.com/{page-slug}</a> . The json object there will contain the id.</p>
 
 <h2>
 <a name="callback-function" class="anchor" href="#callback-function"><span class="octicon octicon-link"></span></a>Callback Function</h2>
