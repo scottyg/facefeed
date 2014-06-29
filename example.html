@@ -3,15 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>facefeed</title>
-	<link href="facefeed.css" rel="stylesheet" />
 </head>
 <body>
-	<ul class="facefeed"></ul>
-		
-	<script src="http://connect.facebook.net/en_US/all.js"></script>
+	
+	<fb:login-button scope="public_profile,email" onlogin="feed.checkLoginState()" data-auto-logout-link="true"></fb:login-button>
+	
+	<div id="status"></div>
+	
 	<script src="facefeed.js"></script>
 	<script>
-		new facefeed(20531316728);
+		var feed = new facefeed( {app_id}, {page_id}, function(response){
+			console.log(response);
+			document.getElementById('status').innerHTML = response;
+		});// app_id, page_id, callback()
 	</script>
+	
 </body>
 </html>
