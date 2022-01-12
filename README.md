@@ -1,4 +1,4 @@
-facefeed
+DEPRECATED
 ==
 
 Returns Facebook page feed as JSON object.
